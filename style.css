@@ -350,7 +350,12 @@ form button:hover {
     section h2 {
         font-size: 1.8em; /* Reduce heading size */
     }
-
+    .section1, .section2, .section3 {
+        padding: 20px 10px;
+        margin: 20px auto;
+        max-width: 95%; /* Make sections wider to fit the screen */
+        box-shadow: none;
+    }
     /* Adjust image sizes in section1 and section2 */
     .section1 img, .section2 img {
         width: 100%;
