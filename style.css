@@ -319,6 +319,7 @@ form button:hover {
 }
 
 
+
 /* Media query for mobile phones */
 @media (max-width: 600px) {
 
@@ -335,7 +336,7 @@ form button:hover {
 
     /* Countdown Timer adjustments */
     #countdown-timer {
-        flex-direction: wrap; /* Stack countdown items vertically */
+        flex-wrap: wrap; /* Stack countdown items vertically */
         font-size: 1.2em;
         gap: 10px; /* Reduce the gap between items */
     }
@@ -346,12 +347,12 @@ form button:hover {
         max-width: 100%; /* Ensure full width on mobile */
         box-shadow: none; /* Remove box shadow for a cleaner mobile look */
         height: auto;
-
     }
 
     section h2 {
         font-size: 1.8em; /* Reduce heading size */
     }
+
     .section1, .section2, .section3 {
         padding: 20px 10px;
         margin: 20px auto;
@@ -359,6 +360,7 @@ form button:hover {
         box-shadow: none;
         height: auto;
     }
+
     /* Adjust image sizes in section1 and section2 */
     .section1 img, .section2 img {
         width: 100%;
@@ -368,8 +370,10 @@ form button:hover {
 
     /* Gift Photos */
     .gift-photos {
+        display: flex;
         flex-direction: column; /* Stack images vertically */
         gap: 10px;
+        width: 100%; /* Ensure full width */
     }
 
     .gift-photos img {
