@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Wedding Day</h1>
+</header>
+
+<section class="info">
+    <h2>Information</h2>
+    <p>Welcome to our wedding website! Here you'll find all the information you need about our big day.</p>
+</section>
+
+<section class="rsvp">
+    <h2>RSVP</h2>
+    <form action="submit_rsvp.php" method="POST">
+        <label for="name">Name/s:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="attendance">Will you attend?</label>
+        <input type="radio" id="yes" name="attendance" value="Yes" required>Yes
+        <input type="radio" id="no" name="attendance" value="No" required>No
+        
+        <label for="dietary">Dietary Requirements:</label>
+        <textarea id="dietary" name="dietary" rows="3"></textarea>
+        
+        <label for="song">Song to get you on the dance floor:</label>
+        <input type="text" id="song" name="song">
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section class="running">
+    <h2>Running of the Day</h2>
+    <p>1pm: Ceremony</p>
+    <p>1:30pm: Drinks Reception</p>
+    <p>3pm: Games</p>
+    <p>3:30pm: Food is served!</p>
+    <p>4:30pm: Speeches!</p>
+    <p>7pm: DJ</p>
+</section>
+
+<section class="section1">
+    <h2>Additional Section 1</h2>
+    <p>Content for another section goes here.</p>
+</section>
+
+<section class="section2">
+    <h2>Additional Section 2</h2>
+    <p>Content for another section goes here.</p>
+</section>
+
+</body>
+</html>
