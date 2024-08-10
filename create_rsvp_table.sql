@@ -10,8 +10,9 @@ DROP TABLE IF EXISTS rsvp;
 -- Create the RSVP table
 CREATE TABLE rsvp (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    attendance VARCHAR(10) NOT NULL,
+    name1 VARCHAR(255) NOT NULL,
+    name2 VARCHAR(255),
+    attendance VARCHAR(5) NOT NULL,
     dietary TEXT,
     song VARCHAR(255)
 );

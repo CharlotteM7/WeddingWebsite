@@ -1,3 +1,5 @@
+
+
 <?php
 // Database credentials
 $servername = "your_servername";
@@ -14,11 +16,12 @@ if ($conn->connect_error) {
 }
 
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO rsvp (name, attendance, dietary, song) VALUES (?, ?, ?, ?)");
-$stmt->bind_param("ssss", $name, $attendance, $dietary, $song);
+$stmt = $conn->prepare("INSERT INTO rsvp (name1, name2, attendance, dietary, song) VALUES (?, ?, ?, ?, ?)");
+$stmt->bind_param("sssss", $name1, $name2, $attendance, $dietary, $song);
 
 // Set parameters and execute
-$name = $_POST['name'];
+$name1 = $_POST['name1'];
+$name2 = $_POST['name2'];
 $attendance = $_POST['attendance'];
 $dietary = $_POST['dietary'];
 $song = $_POST['song'];
