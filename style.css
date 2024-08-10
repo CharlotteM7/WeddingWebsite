@@ -345,6 +345,8 @@ form button:hover {
         padding: 20px 10px;
         max-width: 100%; /* Ensure full width on mobile */
         box-shadow: none; /* Remove box shadow for a cleaner mobile look */
+        height: auto;
+
     }
 
     section h2 {
@@ -355,6 +357,7 @@ form button:hover {
         margin: 20px auto;
         max-width: 95%; /* Make sections wider to fit the screen */
         box-shadow: none;
+        height: auto;
     }
     /* Adjust image sizes in section1 and section2 */
     .section1 img, .section2 img {
