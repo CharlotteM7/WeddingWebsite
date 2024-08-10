@@ -320,96 +320,90 @@ form button:hover {
 
 
 /* Media query for mobile phones */
-@media (max-width: 500px) {
-
-    /* General body adjustments for mobile */
-    body {
-        font-size: 14px;
-        padding: 10px;
-    }
+@media (max-width: 600px) {
 
     /* Header adjustments */
     header {
-        height: 400px; 
+        height: 300px; /* Reduce the height for better fit on mobile */
         background-size: cover;
     }
 
     header h1 {
-        font-size: 2em; 
-        padding: 0 20px; 
+        font-size: 2em; /* Reduce font size for mobile */
+        padding: 0 10px; /* Add some padding for better text spacing */
     }
 
     /* Countdown Timer adjustments */
     #countdown-timer {
-        flex-direction: column;
+        flex-direction: wrap; /* Stack countdown items vertically */
         font-size: 1.2em;
-        gap: 10px; 
+        gap: 10px; /* Reduce the gap between items */
     }
 
     /* Section padding */
     section {
         padding: 20px 10px;
-        max-width: 100%; 
-        box-shadow: none; 
+        max-width: 100%; /* Ensure full width on mobile */
+        box-shadow: none; /* Remove box shadow for a cleaner mobile look */
     }
 
     section h2 {
-        font-size: 1.8em; 
+        font-size: 1.8em; /* Reduce heading size */
     }
 
     /* Adjust image sizes in section1 and section2 */
     .section1 img, .section2 img {
         width: 100%;
         height: auto;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     /* Gift Photos */
     .gift-photos {
-        flex-direction: column; 
+        flex-direction: column; /* Stack images vertically */
         gap: 10px;
     }
 
     .gift-photos img {
         width: 100%;
-        max-height: 200px; 
+        max-height: 200px; /* Limit height for better fit */
         object-fit: cover;
     }
 
     /* Timeline adjustments */
     .timeline-container {
-        padding-left: 0; 
+        padding-left: 0; /* Remove extra padding */
     }
 
     .timeline-item {
-        flex-direction: column; 
+        flex-direction: column; /* Stack items vertically */
         text-align: left;
         align-items: flex-start;
-        padding-left: 20px; 
+        padding-left: 20px; /* Add some padding for text readability */
     }
 
     .timeline-item .time {
-        margin-bottom: 5px; 
+        margin-bottom: 5px; /* Space between time and description */
     }
 
     .timeline-item::before {
-        left: 10px; 
-        top: 10px; 
+        left: 10px; /* Adjust position of timeline dot */
+        top: 10px; /* Adjust for better alignment */
     }
 
     /* Map adjustments */
     .map-container iframe {
         width: 100%;
-        height: 300px; 
+        height: 300px; /* Set a consistent height */
     }
 
     /* RSVP form adjustments */
     .rsvp form {
-        width: 100%; 
+        width: 100%; /* Ensure form takes full width */
     }
 
     .rsvp .name-fields {
-        flex-direction: column; 
+        flex-direction: column; /* Stack name fields */
         width: 100%;
     }
 
@@ -434,7 +428,7 @@ form button:hover {
     /* Adjust for very small screens */
     @media (max-width: 400px) {
         h1, h2 {
-            font-size: 1.5em; 
+            font-size: 1.5em; /* Further reduce font size */
         }
 
         p {
@@ -443,7 +437,7 @@ form button:hover {
         }
 
         #countdown-timer {
-            font-size: 1em; 
+            font-size: 1em; /* Adjust font size of countdown */
         }
     }
 }
