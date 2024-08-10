@@ -5,36 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <header>
-    <h1>Our Wedding Day</h1>
+    <h1>Max and Charlotte are getting married!</h1>
+   
 </header>
 
 <section class="info">
-    <h2>Information</h2>
-    <p>Welcome to our wedding website! Here you'll find all the information you need about our big day.</p>
-</section>
+    <h2>3rd September 2025</h2>
+    <section class="map">
+        <h2>Venue Location</h2>
+        <p>Two Woods Estate, Black Gate Ln, Pulborough RH20 1DD</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1273.4207456546966!2d-0.4974053!3d50.9875626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875b8f28d0058cf%3A0xa8b0af3b6bcaaffd!2sTwo+Woods+Estate!5e0!3m2!1sen!2sus!4v1690293727383!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+        </div>
+    </section>
+    
+
+</section>
 <section class="rsvp">
     <h2>RSVP</h2>
+    <h3>Please be aware that this will be an adults-only wedding</h3>
     <form action="submit_rsvp.php" method="POST">
-        <label for="name1">Name/s:</label>
-        <input type="text" id="name1" name="name1" required>
+      
+        <div class="name-fields">
+            <div class="name-field">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" required, placeholder="Your First Name">
+            </div>
+            <div class="name-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required, placeholder="Your Last Name">
+            </div>
+        </div>
+        
+        <label for="guest-name">If you are bringing a guest, tell us their name:</label>
+        <input type="text" id="guest-name" name="guest_name" placeholder="Guest's Full Name">
+      
+    
+        <label for="attendance">Will you be attending?</label>
+        <div class="attendance-options">
+            <div>
+                <input type="radio" id="yes" name="attendance" value="Yes" required>
+                <label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="no" name="attendance" value="No" required>
+                <label for="no">No</label>
+            </div>
+        </div>
+        
+        
+            <label for="dietary">Do you have any dietary requirements:</label>
+            <div class="dietary">
+                <p>All food will be plant-based</p>
+            </div>
+            
+            <input type="text" id="dietary" name="dietary">
+        
+ 
 
-        <label for="name2">Name/s:</label>
-        <input type="text" id="name2" name="name2" required>
-        
-        <label for="attendance">Will you attend?</label>
-        <input type="radio" id="yes" name="attendance" value="Yes" required>Yes
-        <input type="radio" id="no" name="attendance" value="No" required>No
-        
-        <label for="dietary">Dietary Requirements:</label>
-        <textarea id="dietary" name="dietary" rows="3"></textarea>
-        
         <label for="song">Song to get you on the dance floor:</label>
-        <input type="text" id="song" name="song">
+        <input type="text" id="song" name="song", placeholder="Artist and Song Title">
         
         <button type="submit">Submit</button>
     </form>
@@ -42,6 +79,7 @@
 
 <section class="running">
     <h2>Running of the Day</h2>
+    <p>12pm: Guests arrive</p>
     <p>1pm: Ceremony</p>
     <p>1:30pm: Drinks Reception</p>
     <p>3pm: Games</p>
@@ -57,7 +95,14 @@
 
 <section class="section2 - Stuff!">
     <h2>Additional Section 2</h2>
-    <p>Content for another section goes here.</p>
+    <p>Many of you will travel long distances to share our wedding day with us, so please do not feel obliged to get us anything else!</p>
+    <p> Your presence at our wedding is the greatest gift we could ask for. Should you wish to honor us with a gift, a contribution towards our future together would be sincerely appreciated.</p>
+</section>
+
+<section class="section3 - Details">
+    <h2>Additional Section 2</h2>
+    <p>Parking</p>
+    <p>Time and stuff</p>
 </section>
 
 </body>

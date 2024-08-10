@@ -7,12 +7,13 @@ USE wedding_db;
 -- Drop the table if it already exists to avoid errors
 DROP TABLE IF EXISTS rsvp;
 
--- Create the RSVP table
+-- Create the RSVP table with the new fields
 CREATE TABLE rsvp (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name1 VARCHAR(255) NOT NULL,
-    name2 VARCHAR(255),
-    attendance VARCHAR(5) NOT NULL,
-    dietary TEXT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    guest_name VARCHAR(255),
+    attendance ENUM('Yes', 'No') NOT NULL,
+    dietary VARCHAR(255),
     song VARCHAR(255)
 );
