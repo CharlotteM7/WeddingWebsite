@@ -18,8 +18,6 @@ header {
     padding-bottom: 20px; 
 }
 
-
-
 .countdown {
     text-align: center;
     padding: 50px 20px;
@@ -52,8 +50,6 @@ header {
     color: #666;
 }
 
-
-
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4em;
@@ -61,15 +57,12 @@ header h1 {
     margin: 0; 
 }
 
-
 section {
     padding: 50px;
     max-width: 800px;
     margin: auto;
     text-align: center;
 }
-
-
 
 section h2 {
     font-family: 'Playfair Display', serif;
@@ -82,131 +75,37 @@ section h4 {
     margin-top: -15px;
 }
 
-section p, form label, form input, form button {
+section p{
     font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6em;
     margin-bottom: 20px;
    
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-form input[type="text"]{
-    padding: 10px;
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.name-fields {
-    display: flex;
-    justify-content: space-between;
-    width: 65%;
-  
-}
-
-.name-field {
-    
-    width: 48%;
-}
-
-.name-field label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-.name-field input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-
-.attendance-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px 0;
-}
-
-.attendance-options div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.attendance-options input[type="radio"] {
-    margin-right: 10px;
-}
-
-.dietary p {
-    font-size: 0.85em; 
-    margin-top: -15px; 
-    color: #666; 
-}
-
-.dietary label {
-    margin-bottom: 5px; 
-}
-
-
-form button {
-    padding: 15px 30px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-
-.section1,.section3 {
+.section1, .section2, .section3 {
     background-color: #f4f4f4;
-    padding: 50px 20px;
-    margin: 50px auto; 
-    max-width: 1200px; 
-    text-align: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh; 
     box-sizing: border-box;
+    overflow: hidden; /* Prevent content overflow */
 }
 
-.section2 {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    margin: 50px auto; 
-    max-width: 1200px; 
-    text-align: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; 
-    box-sizing: border-box;
+section p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 15px; /* Adjust for consistent spacing */
+}
+
+h2, h1 {
+    margin-bottom: 20px; /* Add consistent spacing */
 }
 
 
@@ -229,8 +128,6 @@ form button:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .timeline {
     text-align: center;
@@ -280,7 +177,7 @@ form button:hover {
 .time {
     font-weight: bold;
     margin-right: 20px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #333;
     letter-spacing: 0.05em;
 }
@@ -297,8 +194,8 @@ form button:hover {
 }
 
 .description {
-    font-size: 1.1em;
-    color: #666;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .timeline-item::before {
@@ -317,8 +214,6 @@ form button:hover {
     content: '';
     display: none;
 }
-
-
 
 /* Media query for mobile phones */
 @media (max-width: 600px) {
@@ -407,21 +302,6 @@ form button:hover {
     .map-container iframe {
         width: 100%;
         height: 300px; /* Set a consistent height */
-    }
-
-    /* RSVP form adjustments */
-    .rsvp form {
-        width: 100%; /* Ensure form takes full width */
-    }
-
-    .rsvp .name-fields {
-        flex-direction: column; /* Stack name fields */
-        width: 100%;
-    }
-
-    .rsvp .name-field {
-        width: 100%;
-        margin-bottom: 10px;
     }
 
     /* Ensure all images fit within screen */
